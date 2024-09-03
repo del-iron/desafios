@@ -88,9 +88,9 @@ nav {
     box-shadow: 0px 7px 9px rgba(17, 16, 16, 0.303);
   
 }
-/*Nav a são os links*/
+/*Nav links*/
 nav a{
-    color: var(--cor1);
+    color: var(--cor0);
     /*Aqui é a distância de cada palavra, uma da outra*/
     padding: 10px;
     /*para se tirar o sublinhado do texto*/
