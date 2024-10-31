@@ -1,0 +1,71 @@
+@charset "UFT-8";
+
+/*Esse código CSS remove as margens e os preenchimentos padrão de todos os elementos na página, garantindo que eles comecem "zerados" para você poder controlar o layout com mais precisão. A versão comum e mais direta seria:*/
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+/*min-height: 100vh;: Aqui, o valor 100vh significa 100% da altura da viewport (tela visível do navegador). Usar vh (viewport height) ao invés de % garante que o html e o body ocupem sempre toda a altura da tela, independentemente do conteúdo. Isso pode ajudar a resolver problemas de páginas que não preenchem a tela inteira em dispositivos móveis ou em telas menores.*/
+html, body{
+    min-height: 100vh;
+    background-color: darkgray;
+}
+
+header{
+    
+    background-color: black;
+    color:aliceblue;
+    text-align: center;
+}
+
+/*text-transform: uppercase;: Transforma todo o texto dentro do h1 em letras maiúsculas.*/
+header > h1{
+    padding-top: 50px;
+    font-variant: small-caps;
+}
+
+header > p{
+    padding-bottom: 50px;
+    font-variant: small-caps;
+}
+
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+}
+/*É aqui que está dando erro
+section.normal{
+    background-color: white;
+    color: black;
+}
+*/
+section.imagem{
+    background-color: rgb(36, 35, 35);
+    color: white;
+}
+
+section.imagem > p{
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.24);
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+footer a:hover{
+    text-decoration: underline;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px ;
+}
+
